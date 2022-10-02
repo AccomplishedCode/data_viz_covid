@@ -15,9 +15,9 @@ df_nys= df_state.loc[df_state.state=='New York']
 df_nyc= df_county.loc[df_county.county=='New York City']
 
 
-import dash  # use Dash version 1.16.0 or higher for this app to work
-import dash_core_components as dcc
-import dash_html_components as html
+import dash  # use Dash version 2.6.0 or higher for this app to work
+from dash import dcc
+from dash import html
 from dash.dependencies import Output, Input
 import plotly.express as px
 
